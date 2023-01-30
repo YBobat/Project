@@ -1,0 +1,53 @@
+nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 0;
+    background-color: whitesmoke;
+    box-shadow: 6px 6px 8px rgba(0,0,0,0.1);
+  }
+  
+  li {
+    list-style: none;
+  }
+
+  /* Make container element for content a maximum width of 80% and center it */
+.container {
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+/* Make all images responsive */
+img {
+    width: 100%;
+    height: auto;
+}
+
+/* Stack table cells vertically on small screens */
+@media (max-width: 600px) {
+    table {
+        display: block;
+        width: 100%;
+    }
+}
+
+/* Adjust font size for larger screens */
+@media (min-width: 1200px) {
+    body {
+        font-size: 1.2em;
+    }
+}
+
+h1 {
+    text-align: center;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    background-color: #020202;
+    color: #f2f2f2;
+  }
