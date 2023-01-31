@@ -11,19 +11,73 @@ nav ul {
     list-style: none;
   }
 
-  /* Make container element for content a maximum width of 80% and center it */
-.container {
-    max-width: 80%;
-    margin: 0 auto;
+  h1{
+    color: #f2f2f2
+  }
+
+  h2 a {
+    color: aqua;
+  }
+
+  #HeaderBio {
+    margin-top: 30px;
+  }
+
+  #Section1 {
+    float: left;
+    width: 50%;
+    background-color: yellow;
+    border: 1px solid black;
+    border-radius: 25px;
+    padding: 20px;
+    margin-top: 10px;
 }
 
-/* Make all images responsive */
+.photo {
+    float: right;
+    width: 40%;
+}
+
 img {
-    width: 100%;
+    width: 90%;
     height: auto;
 }
 
-/* Stack table cells vertically on small screens */
+
+section {
+    width: 45%;
+    float: left;
+    text-align: justify;
+}
+
+#background {
+    background-image: url(image.jpg);
+    background-size: cover;
+    background-position: center;
+    }
+
+
+    body {
+        background-image: url(https://images.unsplash.com/photo-1538370965046-79c0d6907d47?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8Mnx8fGVufDB8fHx8&w=1000&q=80);
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+    
+
+    @media (max-width: 768px) {
+        #Section1 {
+          width: 90%;
+        }
+        
+        .photo {
+          width: 80%;
+          justify-content: center
+        }
+        section{
+          width: 90%
+        }
+      }
+
 @media (max-width: 600px) {
     table {
         display: block;
@@ -38,16 +92,18 @@ img {
     }
 }
 
-h1 {
-    text-align: center;
+@media (max-width: 786px) {
+    body {
+        font-size: 0.75em;
+    }
 }
+
 
 footer {
     position: fixed;
     bottom: 0;
     left: 0;
     width: 100%;
-    text-align: center;
-    background-color: #020202;
+    text-align: left;
     color: #f2f2f2;
   }
