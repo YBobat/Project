@@ -7,20 +7,37 @@ nav ul {
     box-shadow: 6px 6px 8px rgba(0,0,0,0.1);
   }
   
-  li {
+  #links {
     list-style: none;
   }
 
   h1{
-    color: #f2f2f2
+    color: #f2f2f2;
+    text-align: center;
   }
 
   h2 a {
     color: aqua;
+    text-align: left;
+
+  }
+
+  h2  {
+    color: aqua;
+    text-align: left;
+    margin-top: 30px;
+
   }
 
   #HeaderBio {
     margin-top: 30px;
+  }
+  
+   
+  #HeaderPort {
+    margin-top: 30px;
+    float: left;
+    text-align: left;
   }
 
   #Section1 {
@@ -33,9 +50,52 @@ nav ul {
     margin-top: 10px;
 }
 
+#Section1a{
+    float: left;
+    width: 50%;
+    background-color: rgb(77, 168, 113);
+    border: 1px solid rgb(30, 3, 35);
+    border-radius: 25px;
+    padding: 20px;
+    margin-top: 10px;
+}
+
+#Section1b{
+    float: left;
+    width: 50%;
+    background-color: rgb(157, 163, 255);
+    border: 1px solid rgb(4, 46, 2);
+    border-radius: 25px;
+    padding: 20px;
+    margin-top: 10px;
+}
+
+#info {
+    margin-top: 30px;
+    margin-bottom: 40px;
+    width: 50%;
+    padding-left: 15px;
+    margin-left: 15px;
+    float: left;
+    font-style: italic;
+    background-color: lightgray;
+  }
+
+  .list {
+    margin-top: 30px;
+    margin-bottom: 10px;
+    width: 25%;
+    padding-left: 15px;
+    margin-left: 15px;
+    float: left;
+    font-style: italic;
+    background-color: lightgray;
+  }
+
 .photo {
     float: right;
     width: 40%;
+    margin-bottom: 40px;
 }
 
 img {
@@ -45,18 +105,23 @@ img {
 
 
 section {
-    width: 45%;
+    width: 53%;
     float: left;
     text-align: justify;
 }
 
-#background {
-    background-image: url(image.jpg);
-    background-size: cover;
-    background-position: center;
-    }
 
+.achievements {
+  float: left;
+  width: 43.6%;
+  padding: 3px;
+}
 
+.achphoto::after {
+  content: "";
+  clear: both;
+  display: table;
+}
     body {
         background-image: url(https://images.unsplash.com/photo-1538370965046-79c0d6907d47?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8Mnx8fGVufDB8fHx8&w=1000&q=80);
         background-size: cover;
@@ -64,17 +129,46 @@ section {
       }
     
 
+
+      details > summary {
+        padding: 4px;
+        width: 200px;
+        background-color: #eeeeee;
+        border: none;
+        box-shadow: 1px 1px 2px #bbbbbb;
+        cursor: pointer;
+      }
+      
+      details > p {
+        background-color: #eeeeee;
+        padding: 4px;
+        margin: 0;
+        box-shadow: 1px 1px 2px #bbbbbb;
+        font-style: italic;
+      }
+
     @media (max-width: 768px) {
         #Section1 {
           width: 90%;
         }
-        
+        #Section1a {
+            width: 90%;
+        }
         .photo {
           width: 80%;
-          justify-content: center
+          
         }
         section{
           width: 90%
+        }
+        aside {
+            width: 90%;
+        }
+      }
+
+      @media screen and (max-width: 786px) {
+        .achievements {
+          width: 100%;
         }
       }
 
@@ -104,6 +198,7 @@ footer {
     bottom: 0;
     left: 0;
     width: 100%;
-    text-align: left;
+    text-align: right;
     color: #f2f2f2;
+    pointer-events: none;
   }
