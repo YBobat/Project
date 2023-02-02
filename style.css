@@ -7,9 +7,7 @@ nav ul {
     box-shadow: 6px 6px 8px rgba(0,0,0,0.1);
   }
 
-  li {
-    list-style: none;
-  }
+
   
   #links {
     list-style: none;
@@ -199,15 +197,29 @@ section {
         #Section1a {
             width: 90%;
         }
-        .photo {
-          width: 80%;
-          
+        #Section1b {
+            width: 90%;
         }
+        #Section1c {
+            width: 90%;
+        }
+        .photo {
+          width: 80%;          
+        }
+        .photoexp {
+            width: 80%; 
+          }
         section{
           width: 90%
         }
-        aside {
+        #infoexp {
             width: 90%;
+        }
+        #info {
+            width: 90%;
+        }
+        .list {
+            width: 40%;
         }
       }
 
@@ -215,6 +227,9 @@ section {
         .achievements {
           width: 100%;
         }
+        .achievement {
+            width: 100%;
+          }
       }
 
 @media (max-width: 600px) {
